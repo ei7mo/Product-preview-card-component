@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    width: 620px;
+    height: 465px;
+    margin: 200px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 920px) {
+    .card {
+        flex-direction: column;
+        width: 360px;
+        height: 773px;
+    }
+}
+
+.card .product .desktop {
+    width: 310px;
+}
+
+.card .product .mobile {
+    display: none;
+    width: 360px;
+}
+
+@media (max-width: 920px) {
+    .card .product .desktop {
+        display: none;
+    }
+    .card .product .mobile {
+        display: block;
+    }
+}
+
+.card .info {
+    padding: 40px;
+}
+
+@media (max-width: 920px) {
+    .card .info {
+        padding: 30px;
+    }
+}
+
+.card .info .title {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+}
+
+.card .info h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.card .info p {
+    color: hsl(228, 12%, 48%);  
+    line-height: 1.4;
+    margin: 16px 0;
+}
+
+.card .info .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.card .info .price .new-price {
+    color: hsl(158, 36%, 37%);
+}
+
+.card .info .price .old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.card .info a {
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.card .info a:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.card .info a img {
+    margin-right: 10px;
+}
