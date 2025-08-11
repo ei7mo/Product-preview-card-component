@@ -9,8 +9,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## 🚀 Features
 
 - Responsive design
-- Built with HTML, CSS, and JavaScript (or React, Vue, etc.)
-- [Other features your project includes]
+- Built with HTML and CSS
 
 ## 🛠️ Built with
 
